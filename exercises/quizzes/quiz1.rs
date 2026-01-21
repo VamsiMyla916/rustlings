@@ -14,6 +14,8 @@
 
 fn main() {
     // You can optionally experiment here.
+    let result = calculate_price_of_apples(46);
+    println!("The price of 46 apples is {result}");
 }
 
 // Don't change the tests!
@@ -28,4 +30,13 @@ mod tests {
         assert_eq!(calculate_price_of_apples(41), 41);
         assert_eq!(calculate_price_of_apples(65), 65);
     }
+}
+
+fn calculate_price_of_apples(quant:i32) -> i32{ 
+      if quant>40{     
+           quant
+      }
+      else{
+        quant*2
+      }
 }
